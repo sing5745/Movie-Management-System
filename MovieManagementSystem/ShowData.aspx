@@ -79,10 +79,13 @@
                
                foreach(var item in GetMovies())
                {
+                   string url = item.Url;
+
+                   string[] ar = url.Split('?');
                    Response.Write("<div class=\"col-sm-4\">\n" +
-"                <div class=\"panel panel-danger\">\n" +
+"                   <div class=\"panel panel-danger\">\n" +
 "                    <div class=\"panel-heading\">" + item.Name + "</div>\n" +
-"                    <div class=\"panel-body\"><img src=\"" + item.Url + "\"class=\"img-responsive\" style=\"width:100%\" alt=\"Image\"></div><div class=\"panel-footer\"><p class='test'>Genre: " + item.Genre +"</p><p class='test'>Rating: " );
+"                    <div class=\"panel-body\"><iframe src=\"" + "https://www.youtube.com/embed/" + ar[1].Substring(2) + "\"class=\"img-responsive\" style=\"width:100%\" alt=\"Image\"></iframe></div><div class=\"panel-footer\"><p class='test'>Genre: " + item.Genre +"</p><p class='test'>Rating: " );
 
                    for (int i = 0; i < item.Rating; i++)
                    {

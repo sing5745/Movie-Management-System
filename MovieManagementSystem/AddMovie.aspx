@@ -49,7 +49,7 @@
         <div class="form-group">
           <label for="url">Image url:</label>
           <input type="url" runat="server" class="form-control" id="url" />
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter valid url ending with jpg or png?" ForeColor="#CC3300" ControlToValidate="url" Display="Dynamic" ValidationExpression="^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter valid youtube url?" ForeColor="#CC3300" ControlToValidate="url" Display="Dynamic" ValidationExpression="^(?:https?\:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v\=))([\w-]{10,12})(?:$|\&amp;|\?\#).*"></asp:RegularExpressionValidator>
         </div>
         <div class="form-group">
           <label for="rating">Rating:</label>
@@ -66,10 +66,10 @@
           <select class="form-control" runat="server" id="genre" name="genre">
                     <option>Comedy</option>
          		    <option>Kids</option>
-                    <option>Comedy</option>
                     <option>Drama</option>
+                    <option>Action</option>
                     <option>Documentary</option>
-                    <option>Poetry</option>
+                    <option>Romantic</option>
                     <option>Sci-Fi</option>
                    <option>Travel</option>
                      <option>Horror</option>

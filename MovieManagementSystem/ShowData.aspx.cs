@@ -44,14 +44,7 @@ namespace MovieManagementSystem
             return movies;
         }
 
-        public List<Movie> SearchMovies()
-        {
-           // List<Movie> m =;
-
-
-
-            return movies.Where(x => x.Name == "3 Idiots").ToList();
-        }
+       
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
