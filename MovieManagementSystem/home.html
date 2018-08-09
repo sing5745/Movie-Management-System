@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin - bottom: 0;
+        }
+
+
+        /* Add a gray background color and some padding to the footer */
+
+    </style>
+</head>
+<body>
+    <div class="container body-content">
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>Welcome To</h1><h1> Movie Management System</h1>
+
+            </div>
+        </div>
+
+        <div>
+
+            <p class="lead">Contributors</p>
+            <a class="btn btn-primary"> @Inderpreet Singh </a>
+            <a class="btn btn-primary">@Sarwan Singh </a>
+            <a class="btn btn-primary">@Simranjit Singh </a>
+            <a class="btn btn-primary">@Kamaljit Singh </a>
+            <a class="btn btn-primary">@Suryapratap Singh </a>
+            <br /><br />
+            <p class="lead">Instructor: Syed Tanbeer</p>
+            <a class="btn btn-success" href="AddMovie">Lets Go</a>
+        </div>
+        <hr />
+
+    </div>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Movie Management System</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                   <h2 class="lead">This application allow user to add movie in the database. Also includes to update and delete movies</h2>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+            
+</html>
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        $("#myModal").modal();
+    });
+</script>
