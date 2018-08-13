@@ -54,6 +54,8 @@ namespace MovieManagementSystem
             const string subject = "Signing Up";
             const string body = "Thanks for signing Up. Will get you notify.";
 
+            
+
             var smtp = new SmtpClient
             {
                 Host = "smtp.gmail.com",

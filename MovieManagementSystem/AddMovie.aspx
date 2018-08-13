@@ -47,7 +47,7 @@
           </asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
-          <label for="url">Image url:</label>
+          <label for="url">Video url:</label>
           <input type="url" runat="server" class="form-control" id="url" />
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Enter valid youtube url?" ForeColor="#CC3300" ControlToValidate="url" Display="Dynamic" ValidationExpression="^(?:https?\:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v\=))([\w-]{10,12})(?:$|\&amp;|\?\#).*"></asp:RegularExpressionValidator>
         </div>
